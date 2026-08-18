@@ -1,3 +1,4 @@
+
 # Cloud & DevOps Labs
 
 Hands-on labs from my Cloud, DevOps, Docker, Kubernetes, and infrastructure automation learning challenge.
@@ -23,4 +24,6 @@ Hands-on labs from my Cloud, DevOps, Docker, Kubernetes, and infrastructure auto
 
 ## Progress
 
-- Day 01 — Linux and cloud fundamentals
+- Day 01 — Linux and cloud fundamets
+# cloud-devops-labs
+>>>>>>> origin/main

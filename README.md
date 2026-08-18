@@ -1,302 +1,393 @@
+☁️ Cloud & DevOps Labs
 
-# ☁️ Cloud & DevOps Labs
+<div align="center">
 
-> Building practical cloud, Linux, networking, automation, container, and Kubernetes skills through hands-on labs and projects.
+Cloud • Linux • Networking • Automation • Containers • Kubernetes
 
-This repository documents my structured learning journey in **Cloud Computing and DevOps Engineering**.
+A hands-on engineering lab for building, troubleshooting, automating, and documenting modern infrastructure.
 
-The focus is practical: configure systems, understand how they work, troubleshoot problems, automate repetitive tasks, and document the results.
+Build → Test → Break → Troubleshoot → Fix → Automate → Document
 
----
+</div>
 
-## 🎯 Objectives
+🚀 About This Repository
 
-This repository is designed to help me:
+This repository is my practical engineering workspace for developing skills across cloud infrastructure, Linux, networking, automation, containers, and Kubernetes.
 
-- Prepare for my **Fog and Cloud Computing** exam
-- Strengthen Linux administration skills
-- Improve networking and troubleshooting
-- Build practical cloud engineering experience
-- Develop confidence with Git and GitHub
-- Learn Bash and Python automation
-- Automate infrastructure with Ansible
-- Work with Docker and container networking
-- Learn Kubernetes deployment, networking, and storage
-- Build portfolio-ready Cloud and DevOps projects
+The focus is not simply on memorizing commands. Each lab is designed to strengthen the ability to:
 
----
+build infrastructure,
 
-## 🧭 Learning Path
+understand how it works,
 
-```text
-        ☁️ CLOUD
-           │
-           ▼
-        🐧 LINUX
-           │
-           ▼
-        🌐 NETWORKING
-           │
-           ▼
-        🔧 AUTOMATION
-           │
-           ▼
-        🐳 DOCKER
-           │
-           ▼
-        ☸️ KUBERNETES
-           │
-           ▼
-     🚀 CLOUD-NATIVE
-         PROJECTS
-````
+verify its behavior,
 
-The learning approach throughout the repository is:
+troubleshoot failures,
 
-```text
-Build → Break → Troubleshoot → Fix → Explain → Document
-```
+automate repetitive tasks,
 
----
+and document the final solution clearly.
 
-## 🖥️ Lab Environment
+Engineering principle: if I can build it, break it, troubleshoot it, automate it, and explain it, then I understand it.
 
-My primary practical lab currently runs on:
+🧭 Engineering Roadmap
 
-| Component        | Environment           |
-| ---------------- | --------------------- |
-| Cloud Platform   | Google Cloud Platform |
-| Compute          | Compute Engine VM     |
-| Operating System | Ubuntu Linux          |
-| CPU              | 2 vCPU                |
-| Memory           | 8 GB RAM              |
-| Administration   | SSH                   |
-| Version Control  | Git & GitHub          |
+flowchart LR
+    A[☁️ Cloud] --> B[🐧 Linux]
+    B --> C[🌐 Networking]
+    C --> D[⚙️ Automation]
+    D --> E[🐳 Containers]
+    E --> F[☸️ Kubernetes]
+    F --> G[🚀 Cloud-Native Infrastructure]
 
-The cloud VM acts as my remote Linux lab for administration, networking, automation, containers, and future Kubernetes exercises.
+The repository evolves from core infrastructure fundamentals toward increasingly automated and cloud-native environments.
 
----
+🛠️ Technology Areas
 
-## 🧰 Technology Stack
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### 🐧 Linux
+☁️ Cloud & Infrastructure
 
-* Filesystem management
-* Permissions
-* Processes
-* System resources
-* Networking
-* Bash scripting
-* Troubleshooting
+Google Cloud Platform
 
-### 🌐 Networking
+Virtual machines
 
-* IP addressing
-* Routing
-* DNS
-* TCP/UDP
-* SSH
-* Cloud networking
-* Container networking
-* Kubernetes networking
+Infrastructure as a Service
 
-### 🔧 Automation
+Virtual networking
 
-* Bash
-* Python
-* Ansible
-* Infrastructure automation
+Cloud resource management
 
-### ☁️ Cloud
+Remote infrastructure administration
 
-* Virtual machines
-* IaaS concepts
-* Virtual networking
-* Cloud infrastructure
-* Remote administration
+🐧 Linux
 
-### 🐳 Containers
+Filesystem management
 
-* Docker
-* Dockerfiles
-* Docker networking
-* Docker storage
-* Docker Compose
+Users and permissions
 
-### ☸️ Kubernetes
+Processes and services
 
-* Pods
-* Deployments
-* Services
-* Configuration
-* Networking
-* Storage
-* Scheduling
-* Rollouts
+CPU, memory, and storage
 
----
+Package management
 
-# 📚 Progress
+Networking
 
-## ✅ Day 01 — Linux, Cloud, SSH & Git Foundations
+Bash scripting
 
-Day 1 established the foundation for the rest of the lab environment.
+Troubleshooting
 
-### Linux
+🌐 Networking
 
-* Navigated the Linux filesystem
-* Created and managed files and directories
-* Worked with Linux permissions
-* Inspected CPU, memory, and disk resources
-* Created an executable Bash script
+TCP/IP
 
-### Networking
+IPv4 addressing
 
-* Inspected network interfaces
-* Examined the Linux routing table
-* Identified the default gateway
-* Tested IP connectivity
-* Tested DNS resolution
-* Inspected listening TCP/UDP ports
-* Examined private and public IP addressing
+Routing
 
-### SSH
+DNS
 
-* Connected from Windows to a remote Linux VM
-* Configured persistent SSH key authentication
-* Worked with SSH host fingerprints
-* Learned the role of `known_hosts`
-* Configured separate SSH authentication for GitHub
+SSH
 
-### Git & GitHub
+Ports and services
 
-* Configured Git identity
-* Initialized a local Git repository
-* Created commits
-* Connected the repository to GitHub
-* Configured GitHub SSH authentication
-* Used remote branches
-* Fetched remote history
-* Resolved a real Git merge conflict
-* Synchronized local and remote repositories
+Virtual networking
 
-### Bash Automation
+Cloud networking
 
-Created a simple Linux system inventory script:
+</td>
+<td width="50%" valign="top">
 
-```text
-day01-linux/system-info.sh
-```
+⚙️ Automation
 
-The script collects:
+Bash
 
-```text
-┌─────────────────────────┐
-│   SYSTEM INFORMATION    │
-├─────────────────────────┤
-│ Hostname                │
-│ Operating System        │
-│ Kernel                  │
-│ CPU                     │
-│ Memory                  │
-│ Disk                    │
-│ Network Interfaces      │
-│ Routing Table           │
-└─────────────────────────┘
-```
+Python
 
----
+Ansible
 
-## 📂 Repository Structure
+Configuration management
 
-```text
+Infrastructure validation
+
+Reusable automation tooling
+
+🐳 Containers
+
+Docker
+
+Dockerfiles
+
+Images and containers
+
+Container networking
+
+Persistent storage
+
+Docker Compose
+
+☸️ Kubernetes
+
+Pods
+
+Deployments
+
+Services
+
+ConfigMaps and Secrets
+
+Networking
+
+Persistent storage
+
+Scheduling
+
+Application rollouts
+
+</td>
+</tr>
+</table>
+
+Some technologies above are part of the repository's learning and project roadmap and will be added progressively as the lab develops.
+
+🖥️ Lab Architecture
+
+flowchart TB
+    W["💻 Windows Workstation<br/>Terminal • VS Code • Git"] 
+    G["☁️ Google Cloud Platform"]
+    V["🐧 Linux Compute VM<br/>2 vCPU • 8 GB RAM"]
+    R["📦 GitHub Repository"]
+
+    W -->|SSH| G
+    G --> V
+    V -->|Git over SSH| R
+
+The cloud VM provides an isolated environment for infrastructure administration, networking, automation, container, and orchestration labs.
+
+🧪 Engineering Workflow
+
+Every lab follows a repeatable technical workflow:
+
+flowchart LR
+    A[🔨 Build] --> B[✅ Test]
+    B --> C[💥 Break]
+    C --> D[🔎 Troubleshoot]
+    D --> E[🛠️ Fix]
+    E --> F[⚙️ Automate]
+    F --> G[📝 Document]
+
+This keeps the repository focused on engineering capability, not just successful command execution.
+
+🔍 Troubleshooting Method
+
+<details>
+<summary><b>Expand troubleshooting workflow</b></summary>
+
+<br>
+
+Observe
+   ↓
+Collect Evidence
+   ↓
+Define the Scope
+   ↓
+Form a Hypothesis
+   ↓
+Test the Hypothesis
+   ↓
+Apply the Fix
+   ↓
+Verify the Result
+   ↓
+Document the Findings
+
+Typical evidence sources include:
+
+system logs,
+
+process state,
+
+CPU and memory utilization,
+
+filesystem usage,
+
+network interfaces,
+
+routing tables,
+
+DNS resolution,
+
+listening ports,
+
+application logs,
+
+container state,
+
+and Kubernetes objects.
+
+</details>
+
+🤖 Automation Philosophy
+
+Manual work is useful when learning how a system operates. Once the process is understood, repetitive tasks should progressively become automated.
+
+Manual Task
+    │
+    ▼
+Shell Command
+    │
+    ▼
+Bash Script
+    │
+    ▼
+Python Automation
+    │
+    ▼
+Configuration Management
+    │
+    ▼
+Repeatable Infrastructure
+
+The objective is to make infrastructure work:
+
+repeatable • testable • understandable • maintainable
+
+📂 Repository Organization
+
+The repository will evolve toward a technology-oriented structure as the lab grows.
+
 cloud-devops-labs/
 │
-├── README.md
-├── LICENSE
+├── linux/
+├── networking/
+├── bash/
+├── python/
+├── ansible/
+├── docker/
+├── kubernetes/
+├── cloud/
+├── troubleshooting/
 │
-└── day01-linux/
-    ├── system-info.sh
-    │
-    └── practice/
-        ├── file1.txt
-        └── renamed.txt
-```
+├── scripts/
+├── docs/
+│
+├── README.md
+└── LICENSE
 
-The structure will expand as new labs are completed.
+Individual labs or projects may contain their own supporting structure:
 
----
+project-or-lab/
+│
+├── README.md
+├── scripts/
+├── configs/
+├── manifests/
+├── diagrams/
+├── examples/
+└── troubleshooting-notes/
 
-## 🏗️ Planned Projects
+The repository structure will be refined as the work grows. Larger portfolio projects may be moved into dedicated repositories when they become substantial enough to stand on their own.
 
-The learning path will progressively move from small labs to larger engineering projects.
+🏗️ Project Direction
 
-```text
-01 ── Cloud Linux Server
-        │
-02 ── Ansible Infrastructure Automation
-        │
-03 ── Docker Multi-Service Application
-        │
-04 ── Kubernetes Application Platform
-        │
-05 ── End-to-End Cloud-Native Platform
-```
+The lab is designed to support practical projects such as:
 
-Larger portfolio projects may eventually be maintained in their own dedicated repositories.
+cloud Linux server deployment,
 
----
+Linux system automation,
 
-## 💡 Engineering Focus
+infrastructure configuration with Ansible,
 
-The objective is not simply to memorize commands.
+infrastructure compliance and validation,
 
-For each technology, I want to understand:
+Dockerized multi-service applications,
 
-* What problem it solves
-* How it works
-* How to configure it
-* How to verify it
-* How it can fail
-* How to troubleshoot it
-* How repetitive work can be automated
-* How to document and explain the solution
+container networking environments,
 
----
+Kubernetes application deployments,
 
-## 🚀 Current Focus
+Kubernetes networking and storage labs,
 
-```text
-Linux  ────────► Fundamentals
-Networking ────► Troubleshooting
-Git ───────────► Version Control
-Cloud ─────────► Infrastructure
-Bash ──────────► Automation Basics
-```
+cloud-native infrastructure platforms,
 
-Docker, Ansible, Python automation, and Kubernetes will be introduced progressively as the labs continue.
+and network/infrastructure automation tooling.
 
----
+The emphasis is on producing work that can be demonstrated, explained, reproduced, and improved.
 
-## 📌 Repository Status
+📖 Documentation Standard
 
-**🚧 Active Learning & Engineering Repository**
+<details>
+<summary><b>Expand documentation checklist</b></summary>
 
-New labs, scripts, troubleshooting exercises, and projects will be added as the challenge progresses.
+<br>
 
----
+Where appropriate, each meaningful lab or project should document:
 
-### ☁️ → 🐧 → 🌐 → 🔧 → 🐳 → ☸️ → 🚀
+Objective — what is being built or tested
 
-**Learning by building. Improving by troubleshooting.**
+Architecture — how the components connect
 
-```
+Prerequisites — tools and environment required
 
-This version is stronger because it looks like an **engineering repository**, not just a study checklist. It also distinguishes between what you have **already completed** and what is **planned**, which is important if a recruiter or interviewer ever looks at it.
+Configuration — important setup details
 
-I particularly like keeping this final line:
+Implementation — commands, scripts, or manifests
 
-> **Learning by building. Improving by troubleshooting.**
+Verification — how correct behavior is confirmed
 
-It summarizes the purpose of the repository without overselling your current level. 
-```
+Troubleshooting — failures encountered and how they were diagnosed
+
+Security — relevant access, permissions, secrets, and exposure considerations
+
+Lessons learned — technical observations worth retaining
+
+</details>
+
+🔐 Security Principles
+
+Security is treated as part of infrastructure engineering rather than an afterthought.
+
+🔑 SSH key authentication
+🛡️ Least-privilege access
+📁 Appropriate file permissions
+🔒 Secret separation
+🌐 Network exposure awareness
+📦 Container isolation
+🚫 No credentials in source control
+
+Sensitive credentials, private SSH keys, tokens, passwords, and secrets must never be committed to this repository.
+
+🎯 Engineering Goals
+
+This repository is intended to strengthen the ability to work across the infrastructure lifecycle:
+
+flowchart LR
+    A[Design] --> B[Provision]
+    B --> C[Configure]
+    C --> D[Deploy]
+    D --> E[Network]
+    E --> F[Secure]
+    F --> G[Troubleshoot]
+    G --> H[Automate]
+    H --> I[Improve]
+
+The long-term goal is to develop practical capability across Cloud, DevOps, Platform Engineering, and Network Automation disciplines.
+
+📌 Repository Status
+
+<div align="center">
+
+🚧 Active Engineering Lab
+
+This repository is continuously developed through practical labs, scripts, configurations, troubleshooting exercises, and infrastructure projects.
+
+<br>
+
+☁️ → 🐧 → 🌐 → ⚙️ → 🐳 → ☸️ → 🚀
+
+Build it. Understand it. Automate it.
+
+</div>
